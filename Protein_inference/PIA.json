@@ -1,0 +1,35 @@
+{
+  "considerModifications": false,
+  "createPSMsets": true,
+  "errorOnNoDecoys": false,
+  "psmLevelFileID": 0,
+  "calculateAllFDR": true,
+  "calculateCombinedFDRScore": true,
+  "topIdentifications": 0,
+  "preferredFDRScores": [],
+  "psmFilters": [
+    "psm_score_filter_psm_combined_fdr_score <= 0.01"
+  ],
+  "inferePeptides": true,
+  "peptideLevelFileID": 0,
+  "peptideFilters": [
+    "psm_score_filter_psm_combined_fdr_score <= 0.01"
+  ],
+  "peptideExportWithPSMs": true,
+  "infereProteins": true,
+  "inferenceMethod": "inference_occams_razor",
+  "inferenceFilters": [
+    "psm_score_filter_psm_combined_fdr_score <= 0.01"
+  ],
+  "scoringMethod": "scoring_multiplicative",
+  "scoringBaseScore": "psm_combined_fdr_score",
+  "scoringPSMs": "best",
+  "proteinFilters": [
+    "nr_spectra_per_protein_filter >= 2",
+    "nr_unique_peptides_per_protein_filter >= 1"
+  ],
+  "proteinExportFile": "output_step4/420.protein.csv",
+  "proteinExportWithPSMs": true,
+  "proteinExportWithPeptides": true,
+  "proteinExportWithProteinSequences": true
+}
